@@ -1,0 +1,40 @@
+
+h1{
+    font-size: 2.5rem;
+}
+
+p{font-size: 1.3rem;}
+
+body{
+    background-color: #FFEFEF;
+    font-size: 62.5%;
+    color: #722222;
+}
+
+header{
+    backdrop-filter: blur(0px);
+    background-color: rgba(217, 217, 217, 25%);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+}
+
+div, header, footer, section, article{
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+#logo{
+    height: 3.5rem;
+}
+
+#home-article{
+    width: 45%;
+}
+
+#espa{
+    height: 5rem;
+}
