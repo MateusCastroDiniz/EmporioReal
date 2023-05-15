@@ -11,6 +11,10 @@ body{
     color: #722222;
 }
 
+section{
+    display: flex;
+}
+
 header{
     backdrop-filter: blur(0px);
     background-color: rgba(217, 217, 217, 25%);
@@ -18,23 +22,45 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 65px;
 }
 
-div, header, footer, section, article{
-    border: 1px solid black;
-    margin: 1rem;
+article{
+    backdrop-filter: blur(0px);
+    background-color: rgba(255, 0, 0, 0.8);
+    z-index: 1;
 }
 
 #logo{
     height: 3.5rem;
 }
 
+#home{
+    margin-top: 10rem;
+}
+
 #home-article{
     width: 45%;
 }
 
+#aboutus{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#article-aboutus{
+    width: 45%;
+}
+
+.div-texto{
+    position: relative;
+}
+
 #espa{
     height: 5rem;
+}
+
+#background-home{
+    width: 40rem;
 }
