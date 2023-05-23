@@ -1,9 +1,15 @@
 
+body{
+}
+
 h1{
     font-size: 2.5rem;
 }
 
-p{font-size: 1.3rem;}
+p{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
 
 body{
     background-color: #FFEFEF;
@@ -13,6 +19,8 @@ body{
 
 section{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header{
@@ -36,12 +44,15 @@ article{
     height: 3.5rem;
 }
 
-#home{
-    margin-top: 10rem;
-}
 
 #home-article{
-    width: 45%;
+    z-index: 1;
+    margin-top: 8rem;
+    margin-left:30px;
+    width: 50%;
+    height:fit-content;
+    align-items: center;
+    justify-content: center;
 }
 
 #aboutus{
@@ -50,7 +61,8 @@ article{
 }
 
 #article-aboutus{
-    width: 45%;
+    width: 50%;
+    height: fit-content;
 }
 
 .div-texto{
@@ -61,6 +73,27 @@ article{
     height: 5rem;
 }
 
+#contato{
+    display: flex;
+    flex-direction: column;
+}
+
 #background-home{
-    width: 40rem;
+    height:40rem;
+    width: auto;
+}
+
+footer{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+small {
+    margin-top: 1rem;
+    font-size: 15px;
 }
