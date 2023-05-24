@@ -1,6 +1,4 @@
 
-body{
-}
 
 h1{
     font-size: 2.5rem;
@@ -24,24 +22,33 @@ section{
 }
 
 header{
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(10px);
     background-color: rgba(217, 217, 217, 25%);
     z-index: 1;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+    width: 100%;
     height: 65px;
+}
+
+#logo{
+    height: 3.5rem;
+    margin: 1rem;
+}
+
+#button-menu img{
+    width: 2rem;
+    margin:1rem;
 }
 
 article{
     backdrop-filter: blur(0px);
     background-color: rgba(255, 0, 0, 0.8);
     z-index: 1;
-}
-
-#logo{
-    height: 3.5rem;
 }
 
 
