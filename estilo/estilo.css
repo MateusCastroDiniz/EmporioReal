@@ -1,4 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
+
+body{
+    background-color: #FFEFEF;
+    font-size: 62.5%;
+    color: #722222;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root{
+    --width-div-icons: 2.5rem;
+}
 
 h1{
     font-size: 2.5rem;
@@ -9,12 +21,6 @@ p{
     margin-top: 1rem;
 }
 
-body{
-    background-color: #FFEFEF;
-    font-size: 62.5%;
-    color: #722222;
-}
-
 section{
     display: flex;
     justify-content: space-between;
@@ -22,17 +28,17 @@ section{
 }
 
 header{
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     background-color: rgba(217, 217, 217, 25%);
     z-index: 1;
     position: absolute;
     display: flex;
-    flex-direction: row;
+    flex-direction: row(2);
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0 1rem 0;
     width: 100%;
-    height: 65px;
+    height: 50px;
 }
 
 #logo{
@@ -45,16 +51,14 @@ header{
     margin:1rem;
 }
 
-article{
-    backdrop-filter: blur(0px);
-    background-color: rgba(255, 0, 0, 0.8);
-    z-index: 1;
-}
+.fundo-distorcido{
+    backdrop-filter: blur(15px);
+    background-color: rgba(217, 217, 217, 0.25);
 
+}
 
 #home-article{
     z-index: 1;
-    margin-top: 8rem;
     margin-left:30px;
     width: 50%;
     height:fit-content;
@@ -72,7 +76,7 @@ article{
     height: fit-content;
 }
 
-.div-texto{
+.artc-text{
     position: relative;
 }
 
@@ -80,14 +84,60 @@ article{
     height: 5rem;
 }
 
-#contato{
+#contato, #contato div{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #background-home{
-    height:40rem;
-    width: auto;
+    float: right;
+    height: 800px;
+}
+
+#background-contato{
+    position: relative;
+}
+
+#contato{
+    position: relative;
+}
+
+#contato-artc{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100vw;
+
+}
+
+#icons{
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+#icons{
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    height: var(--width-div-icons);
+}
+
+
+#icons img{
+    height: var(--width-div-icons);
+}
+
+#divider{
+    margin: 1.5rem;
+}
+
+.divider-svg{
+    width: 2px;
+    height: 4.5rem;
 }
 
 footer{
