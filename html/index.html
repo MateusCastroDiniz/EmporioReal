@@ -8,36 +8,35 @@
     <link rel="stylesheet" type="text/css" href="../estilo/estilo.css">
     <link rel="shortcut icon" type="image/x-icon" href="../vetores-e-imagens/Logotipos-Emporio-Real/logoEmporio.png" />
     <title>Document</title>
+    <script src="../js/script.js"></script>
 </head>
 <body>
     <header>
-        <img id="logo" src="../vetores-e-imagens/Logotipos-Emporio-Real/logo2.png">
-        <a id="button-menu" href="#"><img src="../vetores-e-imagens/icons/Frame 3.svg"></a>
         <div id="menu">
-            <li>Home</li>
-            <li>Sobre nós</li>
-            <li>contato</li>
+            <img id="logo" src="../vetores-e-imagens/Logotipos-Emporio-Real/logo2.png">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">Sobre nós</a></li>
+                <li><a href="#contato">contato</a></li>
+            </ul>
         </div>
     </header>
     
     <section id="home">
         <article id="home-article">
             <h1>A fragrância que você procura está aqui!</h1>
-            <p>A Empório visa ser a melhor solução para o aroma que você está procurando.
-
-                Estamos diretamente ligados ao ramo de cosméticos, especializados em revenda a preços justos e entrega com qualidade.
-                </p>
+            <p>Desde 2015 cuidando de você.</p>
         </article>
         <img id="background-home" src="..//vetores-e-imagens/background-home.png">
     </section>
 
     <section id="aboutus">
-        <article id="article-aboutus" class="fundo-distorcido">
-            <div class="div-texto">
+        <article id="article-aboutus">
+            <div id="texto-aboutus">
                 <h1>Quem nós somos?</h1>
                 <p>A Empório Real é uma empresa especializada em venda de cosméticos, kits para embelezamento e cuidados com a pele, perfumes e muito mais!!!
 
-                    Nosso compromisso é com a qualidade de entrega e a sua satisfação em levar para casa, a preços justos, um produto que vai melhorar sua qualidade de vida e autoestima.</p>
+                    Estamos comprometidos com a qualidade de entrega e satisfação, a preços justos, com produtos destinados ao embelezamento e bem estar.</p>
             </div>
         </article>
         <img id="background-aboutus" src="../vetores-e-imagens/background-aboutus.png">
@@ -45,8 +44,8 @@
 
     <section id="contato">
         <img id="background-contato" src="../vetores-e-imagens/background-contato.png">
-        <article id="contato-artc" class="artc-text, fundo-distorcido">
-            <div class="div-texto">
+        <article id="contato-artc" class="fundo-distorcido">
+            <div id="texto-contato">
                 <h1>Venha conhecer a nossa loja!</h1>
                 <p>Acesse nossas redes sociais para saber mais sobre os nossos produtos!</p>
             </div>
@@ -60,7 +59,6 @@
                         </svg>
                     </div>
                     <a id="icone-instagram" href=""><img src="../vetores-e-imagens/icons/logo-instagram.png"></a>
-                </div>
             </div>
         </article>
     </section>
