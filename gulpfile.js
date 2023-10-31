@@ -5,7 +5,6 @@ const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
 const htmlmin = require('gulp-htmlmin')
-const babel = require('gulp-babel')
 const sass = require('gulp-sass')(require('node-sass'))
 const browserSync = require('browser-sync').create()
 const reload = browserSync.reload
@@ -33,24 +32,10 @@ function tarefasCSS() {
         .pipe(gulp.dest('./dist/css'))
 }
 
-
-function tarefasJS() {
-    return gulp.src(
-            [
-
-            ])
-        .pipe(babel({
-            comments: false,
-            presets: ['@babel/env']
-        }))
-        .pipe(concat('libs.js'))
-        .pipe(uglify())
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(gulp.dest('./dist/js'))
+function tarefaBootstrap(){
+    return gulp.src('./node_modules/bootstrap/**')
+            .pipe(gulp.dest('./bootstrap'))
 }
-
 
 // POC -- Proof of Concept
 
@@ -92,13 +77,13 @@ function end(cb) {
 }
 
 
-const process = series(tarefasSass, tarefasCSS, tarefasJS, tarefasHTML, end)
+const process = series(tarefaBootstrap, tarefasSass, tarefasCSS, tarefasHTML, end)
+
+exports.bootstrap = tarefaBootstrap
 
 exports.sass = tarefasSass
 
 exports.styles = tarefasCSS
-
-exports.scripts = tarefasJS
 
 exports.arquivos = tarefasHTML
 
